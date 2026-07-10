@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚢 Inteligencia en Alta Mar: Titanic CRISP-ML</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header & Navigation -->
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-ship" style="color: var(--cyan);"></i>
+            <span>Titanic AI</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#investigacion">Investigación</a></li>
+                <li><a href="#metodologia-componentes">Metodología</a></li>
+                <li><a href="#crisp-ml">Ciclo CRISP-ML</a></li>
+                <li><a href="#vision-artificial">Visión Artificial</a></li>
+            </ul>
+        </nav>
+        <a href="http://localhost:8501" target="_blank" class="btn-launch">
+            <i class="fa-solid fa-play"></i> Iniciar Dashboard
+        </a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="badge-tag">MÓDULO DE INTELIGENCIA DE EMBARCACIÓN</div>
+            <h1>Inteligencia Predictiva y Realidad Aumentada en el Mar</h1>
+            <p>Monitoreo inteligente, inferencia de supervivencia en tiempo real e ingeniería de datos predictiva basada
+                en el histórico de pasajeros del Titanic utilizando modelos estadísticos avanzados.</p>
+            <div class="cta-group">
+                <a href="http://localhost:8501" target="_blank" class="btn-primary">
+                    <i class="fa-solid fa-chart-line"></i> Dashboard Streamlit
+                </a>
+                <a href="titanic_analysis.ipynb" class="btn-secondary">
+                    <i class="fa-brands fa-python"></i> Ver Notebook Jupyter
+                </a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="ar-image-wrapper">
+                <img src="assets/ar_titanic_hud.png" alt="Realidad Aumentada en Cubierta">
+                <div class="ar-caption">
+                    <h4><i class="fa-solid fa-eye" style="color: var(--cyan);"></i> Interfaz HUD RA Activa</h4>
+                    <p>Simulación digital proyectando rutas de evacuación en tiempo real en la cubierta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investigation Problem Section -->
+    <section class="section" id="investigacion">
+        <div class="section-header">
+            <h2>Estructuración del Problema de Investigación</h2>
+            <p>La evolución científica hacia la prevención automatizada y mitigación de fatalidades en el transporte
+                marítimo comercial.</p>
+        </div>
+        <div class="feature-list" style="grid-template-columns: 1fr 1fr; gap: 30px;">
+            <div class="feature-item" style="grid-column: span 2; border-left: 4px solid var(--cyan);">
+                <h4><i class="fa-solid fa-clock-rotate-left"></i> Antecedente Técnico</h4>
+                <p>Históricamente, la gestión de emergencias en la navegación comercial ha dependido de protocolos de
+                    evacuación analógicos y de recuentos manuales que carecen de dinamismo predictivo. El desastre del
+                    RMS Titanic en 1912 expuso de manera crítica cómo la distribución socioespacial y la demografía de
+                    los pasajeros determinaron de forma sesgada las probabilidades de supervivencia. En la actualidad,
+                    la disponibilidad de datos estructurados y el surgimiento de la Visión por Computadora (CV) permiten
+                    capturar atributos antropométricos y flujos de movimiento en tiempo real.<br><br>La implementación
+                    de modelos de aprendizaje supervisado, como la Regresión Logística (para clasificación binaria de
+                    supervivencia) y la Regresión Lineal (para la estimación continua de tiempos de evacuación),
+                    metodológicamente organizados bajo el estándar CRISP-ML, representa la evolución científica hacia la
+                    prevención automatizada y la mitigación de fatalidades en el transporte marítimo moderno.</p>
+            </div>
+            <div class="feature-item">
+                <h4><i class="fa-solid fa-triangle-exclamation" style="color: #f87171;"></i> Problemática Detallada</h4>
+                <p>A pesar de los avances tecnológicos en los sistemas de navegación, las operaciones de evacuación
+                    masiva en alta mar siguen adoleciendo de un vacío de conocimiento predictivo en tiempo real. Los
+                    planes de contingencia actuales asumen un comportamiento homogéneo de la población a bordo,
+                    ignorando cómo variables correlacionadas (como la densidad familiar, la edad o la localización
+                    física en las cubiertas) alteran críticamente la probabilidad de salvamento.<br><br>Existe una
+                    marcada ineficiencia en la velocidad de toma de decisiones de las tripulaciones debido a que la
+                    información visual del entorno no se conecta con modelos estadísticos predictivos. Al no contar con
+                    un sistema integrado (que procese datos de imagen mediante CV, evalúe riesgos con modelos ML de
+                    regresión y se despliegue de manera accesible en interfaces web como Streamlit), se perpetúa el
+                    riesgo de pérdidas humanas por cuellos de botella informacionales durante incidentes críticos. Este
+                    proyecto aborda la necesidad de transformar datos históricos y visuales en herramientas analíticas
+                    desplegables para la toma de decisiones bajo presión.</p>
+            </div>
+            <div class="feature-item">
+                <h4><i class="fa-solid fa-circle-question" style="color: var(--cyan);"></i> Pregunta Problema</h4>
+                <p style="font-size: 16px; font-weight: 500; line-height: 1.8; color: #ffffff;">¿En qué medida la
+                    combinación de características sociodemográficas (edad, género, composición familiar) y variables de
+                    segmentación socioeconómica/espacial (clase de pasaje y ubicación en cubierta) permiten predecir con
+                    exactitud la tasa de supervivencia de los pasajeros y modelar el tiempo de respuesta ante siniestros
+                    marítimos, integrando técnicas de Visión por Computadora y Regresión Estadística?</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodological Components Section -->
+    <section class="section" id="metodologia-componentes">
+        <div class="section-header">
+            <h2>Definición de Componentes Metodológicos</h2>
+            <p>Estructuración de variables y componentes analíticos para garantizar la viabilidad del modelado
+                predictivo.</p>
+        </div>
+        <div class="feature-list" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+            <div class="feature-item">
+                <h4><i class="fa-solid fa-user-tag"></i> Unidad de Análisis</h4>
+                <p>El pasajero individual a bordo de una embarcación de transporte masivo.</p>
+            </div>
+            <div class="feature-item">
+                <h4><i class="fa-solid fa-crosshairs"></i> Variable Objetivo (Dependiente)</h4>
+                <p>La probabilidad de supervivencia u optimización de evacuación ante un siniestro.
+                    <br>• <strong>Regresión Logística:</strong> Variable categórica binaria (Sobrevive / No Sobrevive).
+                    <br>• <strong>Regresión Lineal:</strong> Tiempo estimado de evacuación (variable continua simulada).
+                </p>
+            </div>
+            <div class="feature-item" style="grid-column: span 2;">
+                <h4><i class="fa-solid fa-sliders"></i> Variables Independientes (Predictores)</h4>
+                <p>
+                    • <strong>Atributos Demográficos (Extraídos por CV):</strong> Género (<em>Sex</em>) y Edad
+                    (<em>Age</em>).
+                    <br>• <strong>Atributos Socioeconómicos y de Ubicación:</strong> Clase de boleto (<em>Pclass</em>),
+                    Tarifa (<em>Fare</em>) y zona de camarote/cubierta (<em>Cabin</em>).
+                    <br>• <strong>Atributos de Estructura Familiar:</strong> Número de hermanos/cónyuges
+                    (<em>SibSp</em>) y padres/hijos (<em>Parch</em>) a bordo.
+                </p>
+            </div>
+            <div class="feature-item">
+                <h4><i class="fa-solid fa-cloud-showers-heavy"></i> Variables Extrañas</h4>
+                <p>Condiciones climáticas imprevistas, fallos estructurales concurrentes del navío, y el sesgo de
+                    comportamiento humano bajo situaciones de pánico extremo.</p>
+            </div>
+            <div class="feature-item">
+                <h4><i class="fa-solid fa-globe"></i> Contexto de Espacio y Tiempo</h4>
+                <p>Modelado retrospectivo basado en el evento histórico del Atlántico Norte (1912), extrapolable
+                    analíticamente a simulaciones de contingencia en sistemas de transporte marítimo contemporáneos
+                    (2026).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CRISP-ML Life Cycle Section -->
+    <section class="section" id="crisp-ml">
+        <div class="section-header">
+            <h2>Ciclo de Vida del Proyecto (CRISP-ML)</h2>
+            <p>Estructura de desarrollo ágil y sistemática aplicada para garantizar la calidad del modelado de datos.
+            </p>
+        </div>
+
+        <div class="timeline">
+            <!-- Phase 1 -->
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>
+                        <span class="timeline-number">Fase 1</span>
+                        Comprensión del Negocio y Datos
+                    </h3>
+                    <p>Definición del objetivo: clasificar la supervivencia (variable categórica `Survived`) y predecir
+                        el costo del pasaje (variable continua `Fare`). Se analizan la distribución original de datos y
+                        los atributos sociodemográficos para modelado predictivo.</p>
+                </div>
+            </div>
+
+            <!-- Phase 2 -->
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h3>
+                        <span class="timeline-number">Fase 2</span>
+                        Preparación de Datos
+                    </h3>
+                    <p>Limpieza profunda de datos: imputación de valores faltantes utilizando medidas robustas como la
+                        mediana para la edad (`Age`) y la moda para los puertos de embarque (`Embarked`). Codificación
+                        numérica de etiquetas categóricas mediante mapeos óptimos.</p>
+                </div>
+            </div>
+
+            <!-- Phase 3 -->
+            <div class="timeline-item left">
+                <div class="timeline-content">
+                    <h3>
+                        <span class="timeline-number">Fase 3</span>
+                        Modelado Predictivo
+                    </h3>
+                    <p>Entrenamiento de modelos supervisados duales: <strong>Logistic Regression</strong> para la
+                        clasificación binaria de supervivencia, y <strong>Linear Regression</strong> para estimar el
+                        costo de boletos. Integración en un ciclo lógico interactivo.</p>
+                </div>
+            </div>
+
+            <!-- Phase 4 -->
+            <div class="timeline-item right">
+                <div class="timeline-content">
+                    <h3>
+                        <span class="timeline-number">Fase 4</span>
+                        Evaluación del Modelo
+                    </h3>
+                    <p>Validación rigurosa a través de partición Train-Test. Cálculo de métricas: exactitud (Accuracy) y
+                        Matriz de Confusión para clasificación; coeficiente R² de determinación, MAE y MSE para la
+                        regresión continua del pasaje.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Computer Vision Section -->
+    <section class="section" id="vision-artificial">
+        <div class="cv-showroom">
+            <div class="cv-info">
+                <div class="badge-tag"
+                    style="background: rgba(16, 185, 129, 0.08); color: var(--green); border-color: rgba(16, 185, 129, 0.2);">
+                    MÓDULO SENSORIAL (CV)
+                </div>
+                <h2>Detección Visual Inteligente de Pasajeros</h2>
+                <p>Implementación de un modelo de detección y conteo en tiempo real para optimizar la seguridad
+                    marítima. A través del análisis digital de imágenes, la IA cuenta automáticamente el volumen de
+                    tripulación que cruza las pasarelas o cubiertas del transatlántico.</p>
+
+                <div class="feature-list">
+                    <div class="feature-item">
+                        <h4><i class="fa-solid fa-border-none"></i> Bounding Boxes</h4>
+                        <p>Delineado digital preciso de rostros y contornos corporales en la pasarela de embarque.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4><i class="fa-solid fa-calculator"></i> Conteo Automatizado</h4>
+                        <p>Contabilización en tiempo real para control de aforo y listas de pasajeros.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4><i class="fa-solid fa-shield-halved"></i> Seguridad Activa</h4>
+                        <p>Soporte de datos biométricos para localización inmediata de tripulantes durante emergencias.
+                        </p>
+                    </div>
+                    <div class="feature-item">
+                        <h4><i class="fa-solid fa-network-wired"></i> Conectividad HUD</h4>
+                        <p>Los datos numéricos del conteo se transmiten a las interfaces de Realidad Aumentada de la
+                            cabina.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="cv-visual">
+                <div class="ar-image-wrapper" style="max-width: 100%;">
+                    <img src="assets/passenger_detector_ar.png" alt="Detección de pasajeros con IA">
+                    <div class="ar-caption">
+                        <h4><i class="fa-solid fa-robot" style="color: var(--green);"></i> Detección Facial Activa</h4>
+                        <p>El sistema cuenta de forma automática a los pasajeros en el muelle de abordaje.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Titanic AI Analytics Project. Desarrollado con metodología CRISP-ML(Q).</p>
+        <div class="footer-links">
+            <a href="titanic_analysis.ipynb" target="_blank"><i class="fa-brands fa-python"></i> Jupyter Notebook</a>
+            <a href="http://localhost:8501" target="_blank"><i class="fa-solid fa-chart-line"></i> Dashboard Activo</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
